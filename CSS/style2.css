@@ -1,0 +1,172 @@
+*html{
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+/*
+ */
+.middle{
+    position: absolute;
+    top: 65%;
+    left: 6%;
+    transform: translate(-50%,-50%);  
+  }
+  .btn{
+    position: relative;
+    display: block;
+    color: white;
+    border-radius: 25px;
+    font-size: 3vh;
+    font-family: "Advent Pro";
+    text-decoration: none;
+    margin: 2vh 0;
+    border: 2px solid black;
+    padding: 5% 7vh; 
+    overflow: hidden;
+    transition: 1s all ease;
+    
+  }
+  .btn::before{
+    background:#cbcfcd;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+  .btn1::before{
+    
+    width: 0%;
+    height: 100%;
+  }
+  
+  .btn1:hover::before{
+    width: 100%;
+  }
+  
+  
+  .btn2::before{
+    width: 100%;
+    height: 0%;
+  }
+  .btn2:hover::before{
+    height: 100%;
+  }
+  
+  .btn3::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .btn3:hover::before{
+    height: 380%;
+  }
+  
+  .btn4::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+  .btn4:hover::before{
+    height: 380%;
+  }
+.headerimg{
+  width: inherit;
+  height: 20vh;
+  background-image: url("/assets/1500x500.jpg");
+  background-position-x: right;
+  background-position: center;
+  
+}
+.barrita{
+  width: inherit;
+  background-color: black;
+  height: 5vh;
+  justify-self: baseline;
+}
+body{
+  margin: 0%;
+  background: black;
+}
+#logo{
+  width: 40vh;
+  height: 20vh;
+  position: absolute;
+  top: 15%;
+  right: 40%;
+}
+#boton1{
+  margin-top: 3vh;
+}
+h1{
+  font-family: 'Bad Script';
+  font-size: 8vh;
+  padding-top: 15vh;
+  font-weight: bold;
+  margin:0;
+
+}
+#box1{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30vh;
+}
+p{
+  font-family: 'Darker Grotesque';
+  font-size: 22px;
+  text-align: justify;
+} 
+.mapa{
+  text-align: center;
+  border-radius: 25vh;
+}
+#fondonegro{
+  width: inherit;
+  height: 100%;
+  background-color: black;
+}
+section{
+  background: whitesmoke;
+  
+}
+.texto{
+  width: 50%;
+  padding-left: 10vh;
+  margin-right: 10%;
+}
+ iframe{
+  border-radius: 100%;
+  position: absolute;
+  top: 60vh;
+  right:19vh;
+  
+}
+.flex{
+  display:flex;
+}
+.gatito{
+  margin-top: 20vh;
+  width: 50vh;
+  height: 30vh;
+}
+div.box .input-text{
+  border:1px solid #3b6e22;
+  color:#666666;
+  }
+  
+  div.box label{
+  display:block;
+  margin-bottom:10px;
+  color:#555555;
+  }
+  
+  div.box label span{
+  display:inline-block;
+  padding-right:6px;
+  width:70px;
+  text-align:right;
+  font-weight:bold;
+  }
