@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     padding: 0%;
+    background-image: url(../assets/huellaicn.png);
    
 }
 header{
@@ -38,7 +39,7 @@ a{
 #headerjpg{
     height: 16vh;
     width: inherit;
-    background-image: url("/assets/huellas-perro.jpg");
+    background-image: url("../assets/huellas-perro.jpg");
     background-position: center;
 }
 h1{
@@ -66,12 +67,12 @@ iframe{
 }
 .card{
   margin:5% 3%;
-  height: 80vh;
+  height: 65vh;
   
  }
 .texto1{
- text-align: start;
- font-size: 1vh;
+ text-align: center;
+ 
 
  }
  .flex{
@@ -84,4 +85,7 @@ iframe{
     
     text-align: center;
     border: black double 3px;
+}
+.titulo{
+    font-size: 3 vh;
 }
