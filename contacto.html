@@ -20,22 +20,63 @@
         </div>
         <div class="middle">            
             <nav>
-                <a href="./index.html" class="btn btn4" id="boton1">Home</a>
-                <a href="./farmacia.html" class="btn btn4">Farmacia</a>
-                <a href="./juguetes.html" class="btn btn4">Juguetes</a>
-                <a href="./contacto.html" class="btn btn4">¡Contáctenos!</a>
+                <a href="./index.html" class="btn btn4" id="boton1"> <img src="./assets/outline_star_outline_white_18dp.png" alt="menulogo" class="imgmenu"> Home</a>
+                <a href="./farmacia.html" class="btn btn4"> <img src="./assets/outline_local_hospital_white_18dp.png" alt="help" class="imgmenu"> Farmacia</a>
+                <a href="./juguetes.html" class="btn btn4"><img src="./assets/outline_pets_white_18dp.png"  class="imgmenu"> Juguetería</a>
+                <a href="./contacto.html" class="btn btn4"> <img src="./assets/outline_mark_email_unread_white_18dp.png" class="imgmenu" > ¡Contáctenos!</a>
             </nav>
-        </div> 
-        <div class="flex">             
-            <div class="texto">
-                <p>
-                    <label>
-                    <span>Full name</span>
-                    <input type=«text» class=«input-text» name=«email» id=«email» size=«30»/>
-                    </label>
-                </p>
-            </div>
+        </div>
+        <div class="fondoform">
+            
+            <form action="ejemplo.php" method="get">
+                <h3>Contacto</h2>
+                <div>
+                    <div>
+                       <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name">
+                        <label for="surname">Apellido:</label>
+                        <input type="text" name="surname" id="surname">
+                    </div>
+                    
+                </div>
                 
+                    <div class="data1">
+                        <label for="correo">Email:</label>
+                        <input type="text" name="correo" id="correo">
+                        <label for="cel">Teléfono:</label>
+                        <input type="text" name="cel" id="cel">
+                    </div>
+                    <div class="data1">
+                        <h4>Datos de la mascota</h4>
+                        <label for="nameM">Nombre:</label>
+                        <input type="text" name="nameM" id="nameM">
+                        <label for="birthday">Edad:</label>
+                        <input type="number" name="birthday" id="birthday">
+                        <label for="female">Hembra</label>
+                        <input type="radio" name="genre" id="female">
+                        <label for="male">Macho</label>
+                        <input type="radio" name="genre" id="male">
+                        <label for="raza"> Raza:</label>
+                        <input type="text" name="raza" id="raza">
+                        
+                        <div>
+                        <label for="consulta"> Consulta: </label>
+                        <textarea>
+
+                        </textarea>
+
+                        </div>
+                    </div>
+                    <div class="botonesm">
+                        <p>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </p>
+
+                    </div>
+                    
+                
+              </form>
         </div>
     </section>   
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

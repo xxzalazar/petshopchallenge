@@ -1,7 +1,8 @@
 *html{
-  background-color: whitesmoke;
+  background-color: #000;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /*
  */
@@ -96,14 +97,14 @@ body{
   height: 20vh;
   position: absolute;
   top: 15%;
-  right: 40%;
+  right: 36%;
 }
 #boton1{
   margin-top: 3vh;
 }
 h1{
   font-family: 'Bad Script';
-  font-size: 8vh;
+  font-size: 3vh;
   padding-top: 15vh;
   font-weight: bold;
   margin:0;
@@ -129,7 +130,8 @@ p{
   background-color: black;
 }
 section{
-  background: whitesmoke;
+  background-image:url(/assets/fondocorazones.jpg);
+  height: 100%;
   
 }
 .texto{
@@ -152,21 +154,38 @@ section{
   width: 50vh;
   height: 30vh;
 }
-div.box .input-text{
-  border:1px solid #3b6e22;
-  color:#666666;
-  }
-  
-  div.box label{
-  display:block;
-  margin-bottom:10px;
-  color:#555555;
-  }
-  
-  div.box label span{
-  display:inline-block;
-  padding-right:6px;
-  width:70px;
-  text-align:right;
-  font-weight:bold;
-  }
+.imgmenu{
+  width: 3vh;
+  height: 3vh;
+
+}
+.fondoform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Darker Grotesque' ;
+  font-weight: bold;
+  font-size: 4vh;
+  height: 91vh;
+  width: 50%;
+  background: white;
+  margin: 17vh 10vh 10vh 40vh; 
+  border: rgb(90, 93, 97) double 5px;
+  padding-left: 10vh;
+}
+.data1 p{
+  display: block;
+  margin-left: 5vh;
+}
+input[type="submit"], input[type="reset"]{
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #000;
+  color: white;
+  font-size: 18px;
+  border-radius: 2px;
+
+}
