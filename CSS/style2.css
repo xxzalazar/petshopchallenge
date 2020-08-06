@@ -1,11 +1,9 @@
 *html{
-  background-color: #000;
+  background-color: FFA9F1;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/*
- */
 .middle{
     position: absolute;
     top: 65%;
@@ -128,10 +126,11 @@ p{
   width: inherit;
   height: 100%;
   background-color: black;
+  align-items: center;
 }
 section{
-  background-image:url(/assets/fondocorazones.jpg);
-  height: 100%;
+  background-color: white;
+  height: inherit;
   
 }
 .texto{
@@ -165,14 +164,14 @@ section{
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif ;
-  
+
   font-size: 2vh;
   height: 50vh;
   width: 50%;
   background: white;
-  margin: 17vh 10vh 10vh 40vh; 
+  margin: 17vh 7vh 10vh 30vh; 
   border: rgb(0, 0, 0) double 5px;
-  padding: 0 5vh;
+  padding: 0 3vh;
 }
 .data1{
   display: block;
@@ -197,9 +196,28 @@ input[type="submit"], input[type="reset"]{
 }
 .botonesm{
   position:absolute;
-  right: 20%;
-  bottom: 30%;
+  right: 30%;
+  bottom: 9%;
 }
 form{
-  margin:1vh 0vh 0vh 0vh;
+  margin:0;
+  padding: 0;
+}
+#blanco{
+  margin: 10% 0 0% 10% ;
+  width: 70%;
+  height: 60%;
+  background: white;
+  border: black solid 4px;
+}
+.cartita{
+  max-width: 15%;
+  height: 5% ;
+  margin: 5vh;
+}
+.cartita p{
+   font-family: 'Darker Grotesque';
+   font-size: 3vh;
+   text-align: center;
+
 }
