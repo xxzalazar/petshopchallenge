@@ -3,9 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
     <link rel="stylesheet" href="./CSS/style2.css">
     <title>pet-shop</title>
 </head>
@@ -28,18 +28,17 @@
         </div>
         <div class="fondoform">
             
-            <form action="ejemplo.php" method="get">
-                <h3>Contacto</h2>
-                <div>
+            <form method="get">
+                
+                
+                <div class="boxform">
+                    <h3>Contacto</h3>
                     <div>
                        <label for="name">Nombre:</label>
                         <input type="text" name="name" id="name">
                         <label for="surname">Apellido:</label>
                         <input type="text" name="surname" id="surname">
                     </div>
-                    
-                </div>
-                
                     <div class="data1">
                         <label for="correo">Email:</label>
                         <input type="text" name="correo" id="correo">
@@ -48,33 +47,41 @@
                     </div>
                     <div class="data1">
                         <h4>Datos de la mascota</h4>
-                        <label for="nameM">Nombre:</label>
+                        <label id="margenes" for="nameM">Nombre:</label>
                         <input type="text" name="nameM" id="nameM">
                         <label for="birthday">Edad:</label>
                         <input type="number" name="birthday" id="birthday">
+                        
+                    </div>
+                    <div class="data1">
+                        <label for="raza"> Raza:</label>
+                        <input type="text" name="raza" id="raza">
                         <label for="female">Hembra</label>
                         <input type="radio" name="genre" id="female">
                         <label for="male">Macho</label>
                         <input type="radio" name="genre" id="male">
-                        <label for="raza"> Raza:</label>
-                        <input type="text" name="raza" id="raza">
-                        
-                        <div>
-                        <label for="consulta"> Consulta: </label>
-                        <textarea>
 
-                        </textarea>
-
-                        </div>
                     </div>
-                    <div class="botonesm">
-                        <p>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Borrar">
-                        </p>
+                    <div class="data1"><label for="consulta"> Consulta: </label></div>
+                    
+                    <div class="data1">
+                    
+                    <textarea>
+
+                    </textarea>
+                    
 
                     </div>
                     
+                    
+                    
+                </div>
+                <div class="botonesm">
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </p>
+                </div>
                 
               </form>
         </div>
