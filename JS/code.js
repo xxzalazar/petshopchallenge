@@ -5,7 +5,7 @@ document.getElementById("enviar1").addEventListener("click", function(){
         icon: 'success',
         title: 'Tu mensaje ha sido enviado',
         showConfirmButton: false,
-        timer: 15000
+        timer: 1500
       })
 })
 }

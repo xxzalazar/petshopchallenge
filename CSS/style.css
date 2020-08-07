@@ -41,14 +41,21 @@ a{
     background-position: center;
 }
 h1{
-    font-family: 'Bad Script';
+    font-family: 'Darker Grotesque';
     font-size: 8vh;
-    
+    display: block;
     font-weight: bolder;
-    margin:0;
-    margin-inline-start: 0;
-    text-align: center;
+    color:black;
+    /*
+    text-align: start;
+    position: relative;
+    top: 8vh;
+    left: 20vh;*/
+    text-shadow: 5px 5px 5px #aaa;
   
+}
+.texto{
+    margin: 5vh 0vh 0vh 10vh;
 }
   
 iframe{
@@ -100,32 +107,65 @@ iframe{
     height: 2vh;
 }
 .gatito{    
+    align-self: center;
     margin-top: 20vh;
-    width: 50vh;
-    height: 30vh;
+    margin-left:10vh ;
+    width: 60vh;
+    height: 60vh;
+    padding-left: 10vh;
+    
 }
-.texto{
+#flex{
+    display: flex;
+    margin: 0vh;
+    padding:0;
+    flex-direction: column;
+}
+.parrafos{
+   
     width: 50%;
-    padding-left:vh;
-    margin:10vh 20vh 0 0;
+    padding: 3vh;
+    margin:3vh;
     background-color: rgba(255, 255, 255, 0.726);
     border-radius: 25px;
-    border:black dashed 5px ;
+    height: 35vh;
+    width: 80vh;
+    box-shadow: 0px 0px 5px 1px black;
+    
+}
+.parrafos h1 {
+    margin:0;
+    padding:0;
+    
 }
 iframe{
   border-radius: 100%;
   position: absolute;
-  top: 55vh;
-  right:42vh;
+  top: 60vh;
+  right:50vh;
   
 }
-#flex{
-    display: flex;
-    margin: 10vh;
-}
+
 #home{
     background-image: url(../assets/fondocorazones.jpg);
 }
 form{
-    margin-top: 15vh;
+    margin: 15vh;
+    padding: 30vh;
+    background-color: white;
+}
+#fondo_c{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #ff9bdc 100%);
+
+}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+}
+#enviar1{
+    margin-left: 10vh;
+}
+.cajita12{
+    border-radius: 20px;
 }
