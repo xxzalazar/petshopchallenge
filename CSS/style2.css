@@ -138,13 +138,7 @@ section{
   padding-left: 10vh;
   margin-right: 10%;
 }
- iframe{
-  border-radius: 100%;
-  position: absolute;
-  top: 60vh;
-  right:19vh;
-  
-}
+ 
 .flex{
   display:flex;
 }
@@ -153,11 +147,7 @@ section{
   width: 50vh;
   height: 30vh;
 }
-.imgmenu{
-  width: 3vh;
-  height: 3vh;
 
-}
 .fondoform{
   display: flex;
   flex-direction: column;
@@ -191,8 +181,6 @@ input[type="submit"], input[type="reset"]{
   font-size: 2vh;
   border-radius: 25px;
   font-family:'Bad Script'
-
-
 }
 .botonesm{
   position:absolute;
@@ -220,4 +208,8 @@ form{
    font-size: 3vh;
    text-align: center;
 
+}
+form{
+  margin-top: 30vh!important;
+  
 }

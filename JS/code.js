@@ -1,11 +1,11 @@
-if(document.getElementById("submit")){
-document.getElementById("submit").addEventListener("click", function(){
+if(document.getElementById("enviar1")){
+document.getElementById("enviar1").addEventListener("click", function(){
     Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'success',
-        title: 'Your work has been saved',
+        title: 'Tu mensaje ha sido enviado',
         showConfirmButton: false,
-        timer: 1500
+        timer: 15000
       })
 })
 }

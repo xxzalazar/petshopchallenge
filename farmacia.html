@@ -11,18 +11,16 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <title id="productos">Farmacia</title>
 </head>
-<body>
+<body id="fondopatitas">
     <header>
-        <div id="headerjpg">    
-        </div>
         <nav>
             <div id="barrita" class="nav-wrapper #000000 black">
               <a href="./index.html" class="brand-logo "><img src="./assets/logonr1.png" id="jpg"></a>
               <ul class="right hide-on-med-and-down">
-                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./index.html">Home</a></li>
-                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./farmacia.html">Farmacia</a></li>
-                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./juguetes.html">Juguetería</a></li>
-                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./contacto.html">¡Contáctenos!</a></li>
+                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./index.html"><img src="./assets/outline_star_outline_white_18dp.png" alt="menulogo" class="imgmenu"> Home</a></li>
+                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./farmacia.html"> <img src="./assets/outline_local_hospital_white_18dp.png" alt="help" class="imgmenu"> Farmacia</a></li>
+                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./juguetes.html"><img src="./assets/outline_pets_white_18dp.png"  class="imgmenu"> Juguetería</a></li>
+                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./contacto.html"><img src="./assets/outline_mark_email_unread_white_18dp.png" class="imgmenu"> ¡Contáctenos!</a></li>
               </ul>
             </div>
         </nav>
@@ -34,7 +32,7 @@
         <div class="container" id="app">
             <div class="row">
                 <div class="col s3"  v-for="producto in med">
-                    <div  class="card"  >
+                    <div  class="card" v-bind:class="{stockbordes: 5 > producto.stock  }" >
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" v-bind:src="producto.imagen">
                         </div>
@@ -42,7 +40,7 @@
                           <span class="titulo activator grey-text text-darken-2 "><i class="material-icons right">more_vert</i><p>{{producto.nombre}}</p></span>
                           
                          <br>
-                          <span class="activator grey-text text-darken-2 texto1"><p>stock: {{producto.stock}} unidades </p></span>
+                          <span   class="activator grey-text text-darken-2 texto1"><p v-bind:class="{stockrojo: 5 > producto.stock}">stock: {{producto.stock}} unidades </p></span>
                           
                           <div class="flex">
                               <span class="card-title activator grey-text text-darken-2 texto1"><p>${{producto.precio}}</p></span>

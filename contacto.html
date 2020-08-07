@@ -2,93 +2,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
-    <link rel="stylesheet" href="./CSS/style2.css">
-    <title>pet-shop</title>
+    <link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title> Home </title>
 </head>
 <body>
-    <header class="headerimg">
-        <img src="./assets/logonr.png" alt="logo" id="logo">
+    <header>
+        <nav>
+            <div id="barrita" class="nav-wrapper #000000 black">
+              <a href="./index.html" class="brand-logo "><img src="./assets/logonr1.png" id="jpg"></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./index.html"><img src="./assets/outline_star_outline_white_18dp.png" alt="menulogo" class="imgmenu"> Home</a></li>
+                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./farmacia.html"> <img src="./assets/outline_local_hospital_white_18dp.png" alt="help" class="imgmenu"> Farmacia</a></li>
+                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./juguetes.html"><img src="./assets/outline_pets_white_18dp.png"  class="imgmenu"> Juguetería</a></li>
+                <li><a class="waves-effect waves-light btn #ffcdd2 red lighten-4" href="./contacto.html"><img src="./assets/outline_mark_email_unread_white_18dp.png" class="imgmenu"> ¡Contáctenos!</a></li>
+              </ul>
+            </div>
+        </nav>
     </header>
-    <div class="barrita"></div>
-    
-    <section id="box1">
-        <div class="fondomenu">
+    <section>
+        <div class="container cajita12">
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">First Name</label>
+                      </div>
+                     <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                      </div>
+                  </div>
+                  <p>Datos de la mascota:</p>
+                      
+                  <div class="row">
+                      <div class="input-field col s6">
+                          <input placeholder="Placeholder" id="name" type="text" class="validate">
+                          <label for="first_name">Name</label>
+                        </div>
+                    <div class="input-field col s6">
+                      <input id="raza" type="text" class="validate">
+                      <label for="raza">Raza</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Describa el motivo de su consulta</label>
+                      </div>
+
+                    </div>
+                    
+                    <button class="btn waves-effect waves-light" id="enviar1" type="submit" name="action">Enviar
+                        <i class="material-icons right">send</i>
+                      </button>
+                      
+                  </div>
+                </form>
+              </div>
         </div>
-        <div class="middle">            
-            <nav>
-                <a href="./index.html" class="btn btn4" id="boton1"> <img src="./assets/outline_star_outline_white_18dp.png" alt="menulogo" class="imgmenu"> Home</a>
-                <a href="./farmacia.html" class="btn btn4"> <img src="./assets/outline_local_hospital_white_18dp.png" alt="help" class="imgmenu"> Farmacia</a>
-                <a href="./juguetes.html" class="btn btn4"><img src="./assets/outline_pets_white_18dp.png"  class="imgmenu"> Juguetería</a>
-                <a href="./contacto.html" class="btn btn4"> <img src="./assets/outline_mark_email_unread_white_18dp.png" class="imgmenu" > ¡Contáctenos!</a>
-            </nav>
-        </div>
-        <div class="fondoform">
+                  
             
-            <form method="get">
-                
-                
-                <div class="boxform">
-                    <h3>Contacto</h3>
-                    <div>
-                       <label for="name">Nombre:</label>
-                        <input type="text" name="name" id="name">
-                        <label for="surname">Apellido:</label>
-                        <input type="text" name="surname" id="surname">
-                    </div>
-                    <div class="data1">
-                        <label for="correo">Email:</label>
-                        <input type="text" name="correo" id="correo">
-                        <label for="cel">Teléfono:</label>
-                        <input type="text" name="cel" id="cel">
-                    </div>
-                    <div class="data1">
-                        <h4>Datos de la mascota</h4>
-                        <label id="margenes" for="nameM">Nombre:</label>
-                        <input type="text" name="nameM" id="nameM">
-                        <label for="birthday">Edad:</label>
-                        <input type="number" name="birthday" id="birthday">
-                        
-                    </div>
-                    <div class="data1">
-                        <label for="raza"> Raza:</label>
-                        <input type="text" name="raza" id="raza">
-                        <label for="female">Hembra</label>
-                        <input type="radio" name="genre" id="female">
-                        <label for="male">Macho</label>
-                        <input type="radio" name="genre" id="male">
-
-                    </div>
-                    <div class="data1"><label for="consulta"> Consulta: </label></div>
-                    
-                    <div class="data1">
-                    
-                    <textarea>
-
-                    </textarea>
-                    
-
-                    </div>
-                    
-                    
-                    
-                </div>
-                <div class="botonesm">
-                    <p>
-                        <input type="submit" value="Enviar" id="submit">
-                        <input type="reset" value="Borrar">
-                    </p>
-                </div>
-                
-              </form>
-        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>   
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="./JS/code.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+     <script src="./JS/code.js"></script>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-body{
+#fondopatitas{
     margin: 0%;
     padding: 0%;
     background-image: url(../assets/huellaicn.png);
@@ -9,9 +9,7 @@ header{
     display: flex;
     flex-direction: row;
 }
-/*body{
-    margin:0;
-}*/
+
 
 #jpg {
     margin: 5% 35% 5% 20%;
@@ -88,4 +86,46 @@ iframe{
 }
 .titulo{
     font-size: 3 vh;
+}
+.stockrojo{
+    color: red;
+    font-weight: bold;
+}
+.stockbordes{
+    border: rgb(246, 64, 64) solid 4px;
+    border-radius: 8px;
+}
+.imgmenu{
+    width: 2vh;
+    height: 2vh;
+}
+.gatito{    
+    margin-top: 20vh;
+    width: 50vh;
+    height: 30vh;
+}
+.texto{
+    width: 50%;
+    padding-left:vh;
+    margin:10vh 20vh 0 0;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 25px;
+    border:black dashed 5px ;
+}
+iframe{
+  border-radius: 100%;
+  position: absolute;
+  top: 55vh;
+  right:42vh;
+  
+}
+#flex{
+    display: flex;
+    margin: 10vh;
+}
+#home{
+    background-image: url(../assets/fondocorazones.jpg);
+}
+form{
+    margin-top: 15vh;
 }
