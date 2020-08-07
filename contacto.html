@@ -33,7 +33,7 @@
     <section>
         <div class="container cajita12">
             <div class="row">
-                <form class="col s12">
+                <form v-on:submit.prevent="onSubmit" class="col s12">
                   <div class="row">
                     <div class="input-field col s6">
                         <i class="material-icons prefix">account_circle</i>
@@ -60,8 +60,8 @@
                       
                   <div class="row">
                       <div class="input-field col s6">
-                          <input placeholder="Placeholder" id="name" type="text" class="validate">
-                          <label for="first_name">Nombre</label>
+                          <input placeholder="Nombre" id="name" type="text" class="validate">
+                          <label for="first_name"></label>
                         </div>
                     <div class="input-field col s6">
                       <input id="raza" type="text" class="validate">
@@ -73,11 +73,9 @@
                         <textarea id="textarea1" class="materialize-textarea"></textarea>
                         <label for="textarea1">Describa el motivo de su consulta</label>
                       </div>
-                      <button class="btn waves-effect waves-light" id="enviar1" type="submit" name="action">Enviar
-                        <i class="material-icons right">send</i>
-                      </button>
-                      
-
+                      <a class="waves-effect waves-light btn-large" id="submit"><i class="material-icons right">send</i>Enviar</a>
+                        
+                     
                     </div>
                     
                     

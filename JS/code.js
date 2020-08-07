@@ -1,5 +1,5 @@
-if(document.getElementById("enviar1")){
-document.getElementById("enviar1").addEventListener("click", function(){
+if(document.getElementById("submit")){
+document.getElementById("submit").addEventListener("click", function(){
     Swal.fire({
         position: 'center',
         icon: 'success',

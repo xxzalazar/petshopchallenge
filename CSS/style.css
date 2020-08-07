@@ -19,7 +19,7 @@ header{
     display: block;
 }
 
-a{
+nav a{
     text-decoration: none;
     color: black!important;
     font-family: 'Advent Pro';
@@ -163,8 +163,10 @@ form{
     display: flex;
     flex-direction: row;
 }
-#enviar1{
-    margin-left: 10vh;
+#submit{
+    margin-left: 80vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 .cajita12{
     border-radius: 20px;
