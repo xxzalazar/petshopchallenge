@@ -164,10 +164,26 @@ form{
     flex-direction: row;
 }
 #submit{
-    margin-left: 80vh;
+    margin-left: 90vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
-.cajita12{
+form{
     border-radius: 20px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    height: 10vh;
+    padding-top: 1vh;
+    font-family: 'Advent Pro';
+    font-weight: bold;
+    color: white;
+
+}
+#Colores{
+    padding: 2vh;
+}
+h4, h5{
+    font-family: 'Advent Pro' ;
 }
