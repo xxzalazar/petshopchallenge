@@ -85,12 +85,7 @@ iframe{
      flex-direction: column;
      justify-content: center;
  }
-.boton_s{
 
-    
-    text-align: center;
-    border: black double 3px;
-}
 .titulo{
     font-size: 3 vh;
 }
@@ -139,10 +134,10 @@ iframe{
     
 }
 iframe{
-  border-radius: 100%;
+  border-radius: 50%;
   position: absolute;
-  top: 60vh;
-  right:50vh;
+  top: 59vh;
+  right:45vh;
   
 }
 
@@ -186,4 +181,13 @@ footer{
 }
 h4, h5{
     font-family: 'Advent Pro' ;
+}
+.boton_s{
+    text-align: center;
+    border: black double 3px;
+}
+.button_s:hover {
+    color:black!important;
+    text-decoration: none;
+    
 }
